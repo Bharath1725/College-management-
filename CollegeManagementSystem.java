@@ -84,9 +84,9 @@ class StudentManagement {
 public class CollegeManagementSystem {
     public static void main(String[] args) {
         StudentManagement studentManagement = new StudentManagement();
-        studentManagement.addStudent("Alice", "Computer Science");
-        studentManagement.addStudent("Bob", "Electrical Engineering");
-        studentManagement.addStudent("Charlie", "Computer Science");
+        studentManagement.addStudent("Bharath", "Computer Science");
+        studentManagement.addStudent("Vijay", "Electrical Engineering");
+        studentManagement.addStudent("Bhava", "Computer Science");
         System.out.println("\n--- All Students ---");
         studentManagement.getAllStudents().forEach(System.out::println);
         Student alice = studentManagement.getStudent(1);
