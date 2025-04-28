@@ -3,7 +3,7 @@ Overview
 
 This application facilitates managing student information in a college setting.
 Users can log in, add student details, display all students, and log out.
-The application uses a HashMap to manage user credentials.
+
 Getting Started
 To run this program, you'll need to have Java installed on your computer. Clone the repository and navigate to the directory containing the MainApp.java file. Then, compile and run the program using the following commands in your terminal:
 javac MainApp.java
