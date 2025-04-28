@@ -83,13 +83,13 @@ class StudentManagement {
 
 public class CollegeManagementSystem {
     public static void main(String[] args) {
-        StudentManagement sm = new StudentManagement();
-        sm.addStudent("Bharath", "Information Technology");
-        sm.addStudent("Vijay", "Electrical Engineering");
-        sm.addStudent("Jasiya", "Civil Enginerring");
+        StudentManagement studentManagement = new StudentManagement();
+        studentManagement.addStudent("Bharath", "Information Technology");
+        studentManagement.addStudent("Vijay", "Electrical Engineering");
+        studentManagement.addStudent("Jasiya", "Civil Enginerring");
         System.out.println("\n--- All Students ---");
-        sm.getAllStudents().forEach(System.out::println);
-        Student alice = sm.getStudent(3);
+        studentManagement.getAllStudents().forEach(System.out::println);
+        Student alice = studentManagement.getStudent(3);
         if (alice != null) {
             System.out.println("\n--- Retrieved Student ---");
             System.out.println(alice);
