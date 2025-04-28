@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Map;
 
 class Student {
-    private int studentId;
-    private String name;
-    private String department;
+     int studentId;
+     String name;
+     String department;
 
     public Student(int studentId, String name, String department) {
         this.studentId = studentId;
@@ -37,8 +37,8 @@ class Student {
 }
 
 class Course {
-    private String courseCode;
-    private String courseName;
+     String courseCode;
+     String courseName;
 
     public Course(String courseCode, String courseName) {
         this.courseCode = courseCode;
@@ -63,8 +63,8 @@ class Course {
 }
 
 class StudentManagement {
-    private Map<Integer, Student> students = new HashMap<>();
-    private int nextStudentId = 1;
+     Map<Integer, Student> students = new HashMap<>();
+     int nextStudentId = 1;
 
     public void addStudent(String name, String department) {
         Student student = new Student(nextStudentId++, name, department);
