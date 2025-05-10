@@ -1,17 +1,100 @@
-# College-management-
-Overview
-This application facilitates managing student information in a college setting.
-Users can log in, add student details, display all students, and log out.
-The application uses a HashMap to manage user credentials.
-Getting Started
-To run this program, you'll need to have Java installed on your computer. Clone the repository and navigate to the directory containing the MainApp.java file. Then, compile and run the program using the following commands in your terminal:
-javac MainApp.java
-java MainApp
-Usage
-When you run the program, a menu will be displayed with several options. Enter the number corresponding to the action you want to perform:
+ Description
+CRMS is a simple console-based Java application designed to manage college resources, attendance, and marks for both staff and students. It provides different interfaces for Admin, Staff, and Student users, each with role-specific functionalities.
 
-Log in: Enter your username and password to log in to the system.
-Add student: If you're logged in, you can add a student by entering their name and ID.
-Display all students: View all student information currently in the system.
-Sign out: Log out of the system.
-Exit: Exit the program.
+Features
+Add, edit, and delete resources.
+
+View all resources.
+
+ Staff
+View and book available resources.
+
+Mark attendance for themselves.
+
+Add marks for students.
+
+View attendance and marks for their department.
+
+ Student
+View available resources.
+
+View their own attendance.
+
+View their own marks.
+
+ Data Storage
+Data is persisted across sessions using simple text files:
+
+resources.txt: Stores resource details.
+
+attendance.txt: Stores attendance records.
+
+marks.txt: Stores marks records.
+
+ Login Credentials
+Admin
+
+Username: admin
+
+Password: admin123
+
+Sample Staff
+
+Username: staff
+
+Password: staff123
+
+Sample Student
+
+Username: student
+
+Password: student123
+
+ Department is required during login and is used for access filtering.
+
+ How to Run
+Ensure you have Java 8 or above installed.
+
+Save the code in a file named CRMS.java.
+
+Create the following empty files in the same directory:
+
+resources.txt
+
+attendance.txt
+
+marks.txt
+
+Compile the program:
+
+bash
+Copy
+Edit
+javac CRMS.java
+Run the program:
+
+bash
+Copy
+Edit
+java CRMS
+ Notes
+The application runs in a loop until the user chooses to exit.
+
+File I/O is used for persistent data.
+
+Simple command-line interface (CLI).
+
+Resource IDs are auto-incremented.
+
+Admin actions directly affect the shared resources file.
+
+ Potential Improvements
+GUI interface using JavaFX or Swing.
+
+Database integration (e.g., SQLite, MySQL).
+
+Add password encryption.
+
+Input validation and error handling improvements.
+
+Logging and audit trails.
